@@ -31,7 +31,7 @@ background-color: rgba(175, 223, 124, 0.6);
 }
 
 header>.container>h1{
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 header>.container>h1>a{
@@ -63,13 +63,13 @@ letter-spacing: 3px;
     width: 100%;
 }
 
-// .img-rounded{
-//     border-radius: 8px;
-// }
-
-.img-circle{
-    border-radius: 50%;
+.img-rounded{
+    border-radius: 8px;
 }
+
+// .img-circle{
+//     border-radius: 50%;
+// }
 
 // 版塊樣式
 .row{
@@ -84,6 +84,21 @@ letter-spacing: 3px;
 
 .text-justify{
     text-align: justify;
+}
+
+.tittle a{
+    color: black;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.date{
+    color: $primary-color;
+}
+
+div>h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 // 四欄式
@@ -109,4 +124,26 @@ margin: 0px 15px 40px 15px;
     // 上右下左
     }
     
+footer {
+background-color: $primary-color;
+padding: 40px 0 40px 0;
+    }
+
+    dt{
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: bisque;
+    }
+
+    dd{
+        margin-bottom: 4px;
+    }
+
+    dd>a{
+        color: rgb(255, 255, 255);
+    }
+
+    .copyright{
+        color: bisque;
+    }
 

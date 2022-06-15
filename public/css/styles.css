@@ -26,7 +26,7 @@ header {
 }
 
 header > .container > h1 {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 header > .container > h1 > a {
@@ -52,8 +52,8 @@ header > .container > nav > ul > li > a {
   width: 100%;
 }
 
-.img-circle {
-  border-radius: 50%;
+.img-rounded {
+  border-radius: 8px;
 }
 
 .row {
@@ -69,6 +69,21 @@ header > .container > nav > ul > li > a {
   text-align: justify;
 }
 
+.tittle a {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.date {
+  color: black;
+}
+
+div > h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .col-3 {
   width: calc(100% / 4 - 30px);
   margin: 10px 15px 40px 15px;
@@ -82,4 +97,27 @@ header > .container > nav > ul > li > a {
 .col-6 {
   width: calc(100% / 2 - 30px);
   margin: 0px 15px 40px 15px;
+}
+
+footer {
+  background-color: black;
+  padding: 40px 0 40px 0;
+}
+
+dt {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: bisque;
+}
+
+dd {
+  margin-bottom: 4px;
+}
+
+dd > a {
+  color: white;
+}
+
+.copyright {
+  color: bisque;
 }
