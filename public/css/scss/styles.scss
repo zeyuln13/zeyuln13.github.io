@@ -58,17 +58,55 @@ letter-spacing: 3px;
 // ------------內容區-------------
 // -------------------------------
 
+// 圖片樣式
 .img-fluid{
     width: 100%;
 }
 
+// .img-rounded{
+//     border-radius: 8px;
+// }
+
+.img-circle{
+    border-radius: 50%;
+}
+
+// 版塊樣式
 .row{
     display: flex;
     flex-wrap: wrap;  // 換行
-
 }
 
+// 文字樣式
+.text-center{
+    text-align: center;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+// 四欄式
+.col-3{
+    width: calc(100% / 4 - 30px);
+    margin: 10px 15px 40px 15px;
+    // 上右下左
+    }
+    
+    // 三欄式
 .col-4{
-width: 33.33333%;
+// width: 33.33333%;
+width: calc(100% / 3 - 30px);
+margin: 0px 15px 40px 15px;
+// 上右下左
 }
+
+// 二欄式
+.col-6{
+    // width: 33.33333%;
+    width: calc(100% / 2 - 30px);
+    margin: 0px 15px 40px 15px;
+    // 上右下左
+    }
+    
 
