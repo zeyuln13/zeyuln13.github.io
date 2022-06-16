@@ -75,11 +75,16 @@ header > .container > nav > ul > li > a {
   font-weight: 700;
 }
 
+.tittle-left {
+  text-align: left;
+  margin-left: 100px;
+}
+
 .date {
   color: black;
 }
 
-div > h2 {
+div h2 {
   margin-top: 20px;
   margin-bottom: 20px;
 }

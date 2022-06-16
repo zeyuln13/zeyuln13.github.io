@@ -93,11 +93,16 @@ letter-spacing: 3px;
     font-weight: 700;
 }
 
+.tittle-left{
+    text-align: left;
+    margin-left: 100px;
+}
+
 .date{
     color: $primary-color;
 }
 
-div>h2{
+div h2{
     margin-top: 20px;
     margin-bottom: 20px;
 }
