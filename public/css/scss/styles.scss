@@ -140,9 +140,10 @@ margin: 0px 15px 40px 15px;
 .col-9{
     // width: 33.33333%;
     width: calc(100% / 1.33333 - 30px);
-    margin: 10px 15px 40px 15px;
-    padding-top: 20px;
+    margin: 10px 15px 30px 15px;
+    padding-top:40px;
     background-color: beige;
+    border-radius: 15px;
     // 上右下左
     }
 
@@ -205,3 +206,45 @@ padding: 40px 0 40px 0;
 main>div>div>a>img:hover{
     opacity: 0.5;
 }
+
+aside a:hover{
+    background-color: rgba(78, 96, 59, 0.6);
+}
+
+.text-primary{
+    color: black;
+
+}
+
+.img-wrap{
+    display: block;
+    // background-color: rgb(9, 236, 142);
+    position: relative;
+margin-bottom: 10px;
+}
+
+.img-overlay{
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.img-wrap img{
+    vertical-align: top;
+    transition: all 0.5s;
+}
+.img-wrap img:hover {
+    transform: scale(1.5);
+  }
+
+.icon-new{
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+color: black;
+border-radius: 15px;
+background-color: yellow;
+top: -5px;
+left: -10px;
+}
+
