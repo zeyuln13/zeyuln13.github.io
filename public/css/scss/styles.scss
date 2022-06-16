@@ -23,6 +23,7 @@ body{
     max-width: 1140px;
     // background-color: rgb(167, 174, 247);
 }
+
 // -------------------------------
 // ------------頁首---------------
 // -------------------------------
@@ -123,6 +124,13 @@ margin: 0px 15px 40px 15px;
     margin: 0px 15px 40px 15px;
     // 上右下左
     }
+
+    .col-1
+    {
+        background-color:rgba(102, 144, 58, 0.6);
+        width: 200px;
+        margin: 20px 15px 40px 200px;
+    }
     
 footer {
 background-color: $primary-color;
@@ -147,3 +155,19 @@ padding: 40px 0 40px 0;
         color: bisque;
     }
 
+
+div>ul{
+    background-color: aqua;
+   width: 50px;
+   margin: 20px 0px 40px 0px;
+   text-align: center;
+}
+
+div>ul>li{
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+div>ul>li>a{
+    color: $primary-color;
+}
