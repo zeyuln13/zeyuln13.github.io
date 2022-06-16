@@ -96,7 +96,6 @@ div h2 {
 .col-3 {
   width: calc(100% / 4 - 30px);
   margin: 10px 15px 40px 15px;
-  background-color: rgba(44, 109, 175, 0.267);
 }
 
 .col-4 {
@@ -112,6 +111,7 @@ div h2 {
 .col-9 {
   width: calc(100% / 1.33333 - 30px);
   margin: 10px 15px 40px 15px;
+  padding-top: 20px;
   background-color: beige;
 }
 
@@ -150,9 +150,11 @@ dd > a {
 }
 
 .btn-primary {
-  background-color: #f41717;
+  background-color: black;
   padding: 15px;
-  color: black;
+  color: white;
   display: block;
   margin-bottom: 10px;
+  text-align: center;
+  border-radius: 15px;
 }
