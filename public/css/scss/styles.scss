@@ -117,6 +117,13 @@ margin: 0px 15px 40px 15px;
 // 上右下左
 }
 
+.col-4s{
+    // width: 33.33333%;
+    width: calc(100% / 3 - 80px);
+    margin: 0px 10px 40px 50px;
+    // 上右下左
+    }
+
 // 二欄式
 .col-6{
     // width: 33.33333%;
@@ -159,7 +166,7 @@ padding: 40px 0 40px 0;
 div>ul{
     background-color: aqua;
    width: 50px;
-   margin: 20px 0px 40px 0px;
+   margin: 5px 0px 10px 0px;
    text-align: center;
 }
 

@@ -94,6 +94,11 @@ div > h2 {
   margin: 0px 15px 40px 15px;
 }
 
+.col-4s {
+  width: calc(100% / 3 - 80px);
+  margin: 0px 10px 40px 50px;
+}
+
 .col-6 {
   width: calc(100% / 2 - 30px);
   margin: 0px 15px 40px 15px;
@@ -131,7 +136,7 @@ dd > a {
 div > ul {
   background-color: aqua;
   width: 50px;
-  margin: 20px 0px 40px 0px;
+  margin: 5px 0px 10px 0px;
   text-align: center;
 }
 
