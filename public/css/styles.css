@@ -69,6 +69,10 @@ header > .container > nav > ul > li > a {
   text-align: justify;
 }
 
+.tittle {
+  font-size: 12px;
+}
+
 .tittle a {
   color: black;
   font-size: 1.5em;
@@ -92,6 +96,7 @@ div h2 {
 .col-3 {
   width: calc(100% / 4 - 30px);
   margin: 10px 15px 40px 15px;
+  background-color: rgba(44, 109, 175, 0.267);
 }
 
 .col-4 {
@@ -99,20 +104,15 @@ div h2 {
   margin: 0px 15px 40px 15px;
 }
 
-.col-4s {
-  width: calc(100% / 3 - 80px);
-  margin: 0px 10px 40px 50px;
-}
-
 .col-6 {
   width: calc(100% / 2 - 30px);
   margin: 0px 15px 40px 15px;
 }
 
-.col-1 {
-  background-color: rgba(102, 144, 58, 0.6);
-  width: 200px;
-  margin: 20px 15px 40px 200px;
+.col-9 {
+  width: calc(100% / 1.33333 - 30px);
+  margin: 10px 15px 40px 15px;
+  background-color: beige;
 }
 
 footer {
@@ -138,23 +138,21 @@ dd > a {
   color: bisque;
 }
 
-div > ul {
-  background-color: aqua;
-  width: 50px;
-  margin: 5px 0px 10px 0px;
-  text-align: center;
-}
-
-div > ul > li {
-  box-sizing: border-box;
-  margin-bottom: 30px;
-}
-
-div > ul > li > a {
-  color: black;
-}
-
-div > a {
+.breadcrumb {
+  display: flex;
   margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.breadcrumb a {
   color: black;
+}
+
+.btn-primary {
+  background-color: #f41717;
+  padding: 15px;
+  color: black;
+  display: block;
+  margin-bottom: 10px;
 }

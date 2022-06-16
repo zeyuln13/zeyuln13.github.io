@@ -87,6 +87,10 @@ letter-spacing: 3px;
     text-align: justify;
 }
 
+.tittle{
+    font-size: 12px;
+}
+
 .tittle a{
     color: black;
     font-size: 1.5em;
@@ -111,6 +115,7 @@ div h2{
 .col-3{
     width: calc(100% / 4 - 30px);
     margin: 10px 15px 40px 15px;
+    background-color: rgba(44, 109, 175, 0.267);
     // 上右下左
     }
     
@@ -122,12 +127,6 @@ margin: 0px 15px 40px 15px;
 // 上右下左
 }
 
-.col-4s{
-    // width: 33.33333%;
-    width: calc(100% / 3 - 80px);
-    margin: 0px 10px 40px 50px;
-    // 上右下左
-    }
 
 // 二欄式
 .col-6{
@@ -137,11 +136,13 @@ margin: 0px 15px 40px 15px;
     // 上右下左
     }
 
-    .col-1
-    {
-        background-color:rgba(102, 144, 58, 0.6);
-        width: 200px;
-        margin: 20px 15px 40px 200px;
+// 二欄式
+.col-9{
+    // width: 33.33333%;
+    width: calc(100% / 1.33333 - 30px);
+    margin: 10px 15px 40px 15px;
+    background-color: beige;
+    // 上右下左
     }
     
 footer {
@@ -167,24 +168,29 @@ padding: 40px 0 40px 0;
         color: bisque;
     }
 
+    .breadcrumb{
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width:100%;
+    }
 
-div>ul{
-    background-color: aqua;
-   width: 50px;
-   margin: 5px 0px 10px 0px;
-   text-align: center;
-}
+    .breadcrumb a{
+        color: black;
+    }
 
-div>ul>li{
-    box-sizing: border-box;
-    margin-bottom: 30px;
-}
+//     .w-20{
+// width: 20%;
+//     }
 
-div>ul>li>a{
-    color: $primary-color;
-}
+//     .w-80{
+// width: 80%;
+//     }
 
-div>a{
-    margin-top: 20px;
-    color: $primary-color;
+.btn-primary{
+    background-color: rgb(244, 23, 23);
+    padding: 15px;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
 }
