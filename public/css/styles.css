@@ -115,6 +115,10 @@ div h2 {
   background-color: beige;
 }
 
+.col-4 > img:hover {
+  opacity: 30%;
+}
+
 footer {
   background-color: black;
   padding: 40px 0 40px 0;
@@ -157,4 +161,8 @@ dd > a {
   margin-bottom: 10px;
   text-align: center;
   border-radius: 15px;
+}
+
+main > div > div > a > img:hover {
+  opacity: 0.5;
 }
