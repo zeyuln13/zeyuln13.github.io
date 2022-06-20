@@ -120,33 +120,67 @@ div h2 {
     // 上右下左
 }
 
-// 三欄式
-.col-4 {
-    // width: 33.33333%;
-    width: calc(100% / 3 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        --num: calc(12 / #{$i});
+        width: calc(100% / var(--num) - 30px);
+        margin: 10px 15px 40px 15px;
+    }
 }
 
-
-// 二欄式
-.col-6 {
-    // width: 33.33333%;
-    width: calc(100% / 2 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
+@media (min-width:768px) {
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            --num: calc(12 / #{$i});
+            width: calc(100% / var(--num) - 30px);
+            margin: 10px 15px 40px 15px;
+        }
+    }
 }
 
-// 二欄式
-.col-9 {
-    // width: 33.33333%;
-    width: calc(100% / 1.33333 - 30px);
-    margin: 10px 15px 30px 15px;
-    padding-top: 40px;
-    background-color: beige;
-    border-radius: 15px;
-    // 上右下左
+@media (min-width:1200px) {
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+            --num: calc(12 / #{$i});
+            width: calc(100% / var(--num) - 30px);
+            margin: 10px 15px 40px 15px;
+        }
+    }
 }
+
+// // 三欄式
+// .col-4 {
+//     // width: 33.33333%;
+//     width: calc(100% / 3 - 30px);
+//     margin: 0px 15px 40px 15px;
+//     // 上右下左
+// }
+
+// // 二欄式
+// .col-6 {
+//     // width: 33.33333%;
+//     width: calc(100% / 2 - 30px);
+//     margin: 0px 15px 40px 15px;
+//     // 上右下左
+// }
+
+// .col-8 {
+//     // width: 33.33333%;
+//     width: calc(100% / 1.5 - 30px);
+//     margin: 0px 15px 40px 15px;
+//     // 上右下左
+// }
+
+// // 二欄式
+// .col-9 {
+//     // width: 33.33333%;
+//     width: calc(100% / 1.33333 - 30px);
+//     margin: 10px 15px 30px 15px;
+//     padding-top: 40px;
+//     background-color: beige;
+//     border-radius: 15px;
+//     // 上右下左
+// }
 
 .col-4>img:hover {
     opacity: 30%;
@@ -264,7 +298,7 @@ aside a:hover {
 // 小於767px以下執行 Start
 @media (max-width:767px) {
 
-    header{
+    header {
         height: 80px;
     }
 
@@ -318,3 +352,9 @@ aside a:hover {
 }
 
 // 小於767px以下執行 end
+
+@for $i from 1 through 10 {
+    .fz-#{$i} {
+        font-size: $i*1em;
+    }
+}

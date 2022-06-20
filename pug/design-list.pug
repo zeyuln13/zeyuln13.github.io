@@ -6,31 +6,32 @@ head
   title zeyln&apos;s13
   link(rel='stylesheet' href='public/css/styles.css')
 // header>.container>h1{ZYL}+nav>ul>li*4>a[href"#"]{mu1}
-header
-  .container
+header 
+  .container.overflow-hidden
+    a.icon-menu(href="#") menu
     h1
-      a(href='index.html') zeyuln&apos;s portfolio
-    nav
+      a(href='index.html') zeyuln's portfolio
+    nav.active
       ul
         li
-          a(href='') &#x95DC;&#x65BC;&#x6211;
+          a(href='') 關於我
         li
-          a(href='design-list.html') &#x5E73;&#x9762;&#x8A2D;&#x8A08;
+          a(href='design-list.html') 平面設計
         li
-          a(href='') &#x7DB2;&#x9801;&#x8A2D;&#x8A08;
+          a(href='') 網頁設計
         li
-          a(href='') &#x806F;&#x7D61;&#x6211;
+          a(href='') 聯絡我
 // header end
 // content start
 .container
   .row
-    ul.breadcrumb
+    ul.col-12.breadcrumb
       li
         a(href='index.html') &#x9996;&#x9801;
       |                 &nbsp; &#xFF0F; &nbsp;
       li
         a(href='#') &#x5E73;&#x9762;&#x8A2D;&#x8A08;
-    aside.col-3
+    aside.col-12.col-md-3.col-lg-2
       // ul>li*4>a.btn-primary{分類$$}
       ul
         li
@@ -41,11 +42,11 @@ header
           a.btn-primary(href='') &#x5B57;&#x9AD4;&#x8A2D;&#x8A08;
         li
           a.btn-primary(href='') &#x54C1;&#x724C;&#x8A2D;&#x8A08;
-    main.col-9
+    main.col-12.col-md-4.col-lg-10
       .row
         // .col4*6>img+.img-fluid+a{商品$}
         // .col4*6>img+.img-fluid+a{商品$}
-        .col-4.text-center
+        .col-12.col-md-4.text-center
           a.img-wrap(href='#')
             .img-overlay
               img.img-fluid.img-rounded(src='public/images/csd.png' alt='')
@@ -53,7 +54,7 @@ header
           a.text-primary(href='#') &#x4F5C;&#x54C1;&#x6A19;&#x984C;1
         // work end
         // work start
-        .col-4.text-center
+        .col-12.col-md-4.text-center
           a.img-wrap(href='#')
             .img-overlay
               img.img-fluid.img-rounded(src='public/images/txl.png' alt='')
@@ -61,7 +62,7 @@ header
           a.text-primary(href='#') &#x4F5C;&#x54C1;&#x6A19;&#x984C;1
         // work end
         // work start
-        .col-4.text-center
+        .col-12.col-md-4.text-center
           a.img-wrap(href='#')
             .img-overlay
               img.img-fluid.img-rounded(src='public/images/face.jpg' alt='')
@@ -69,7 +70,7 @@ header
           a.text-primary(href='#') &#x4F5C;&#x54C1;&#x6A19;&#x984C;1
         // work end
         // work start
-        .col-4.text-center
+        .col-12.col-md-4.text-center
           a.img-wrap(href='#')
             .img-overlay
               img.img-fluid.img-rounded(src='public/images/lin.png' alt='')
@@ -77,7 +78,7 @@ header
           a.text-primary(href='#') &#x4F5C;&#x54C1;&#x6A19;&#x984C;1
         // work end
         // work start
-        .col-4.text-center
+        .col-12.col-md-4.text-center
           a.img-wrap(href='#')
             .img-overlay
               img.img-fluid.img-rounded(src='public/images/seeu.jpg' alt='')
@@ -85,7 +86,7 @@ header
           a.text-primary(href='#') &#x4F5C;&#x54C1;&#x6A19;&#x984C;1
         // work end
         // work start
-        .col-4.text-center
+        .col-12.col-md-4.text-center
           a.img-wrap(href='#')
             .img-overlay
               img.img-fluid.img-rounded(src='public/images/shu.png' alt='')
