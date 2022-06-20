@@ -264,10 +264,15 @@ aside a:hover {
 // 小於767px以下執行 Start
 @media (max-width:767px) {
 
+    header{
+        height: 80px;
+    }
+
     h1 {
         // width: 85%;
         // background-color: rgb(228, 22, 22);
         float: left;
+        margin-top: -20px;
     }
 
     .icon-menu {
@@ -276,9 +281,9 @@ aside a:hover {
         display: block;
         background-color: rgb(0, 0, 0);
         color: rgb(255, 255, 255);
-        line-height: 24px;
+        line-height: 30px;
         height: 30px;
-        margin-top: 50px;
+        margin-top: 25px;
         font-size: 18px;
         text-align: center;
         border-radius: 15px;
@@ -292,6 +297,10 @@ aside a:hover {
 
     header>.container>nav>ul {
         display: block;
+    }
+
+    header>.container>nav.active {
+        display: none;
     }
 
     header>.container>nav>ul>li {
