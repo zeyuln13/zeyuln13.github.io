@@ -1,0 +1,114 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title zeyuln's
+  link(rel='stylesheet' href='public/css/styles.css')
+// header>.container>h1{ZYL}+nav>ul>li*4>a[href"#"]{mu1}
+header 
+  .container.overflow-hidden
+    a.icon-menu(href="#") menu
+    h1
+      a(href='index.html') zeyuln's portfolio
+    nav
+      ul
+        li
+          a(href='') 關於我
+        li
+          a(href='design-list.html') 平面設計
+        li
+          a(href='') 網頁設計
+        li
+          a(href='') 聯絡我
+// header end
+img.img-fluid(src='public/images/header.png' alt='')
+// content start
+// .container>h1{最新作品一覽}+.row>.<div class="col-4">*6>img.img-fluid+p.tittle>a[href="#"]{標題$}^p.description{內容}
+.container
+  h2.text-center 最新作品
+  .row
+    // .col-4*7>a>img[src="" 300px 300px alt="" class="img-fluid img-rounded"]^p.tittle text-center>a{作品$}^p.date.text-center{2022-06-15}
+    .col-4
+      a.img-wrap(href='#')
+        .img-overlay
+          img.img-fluid.img-rounded(src='public/images/csd.png' alt='' 300px='')
+      p.tittle.text-center
+        a(href='') Dry And Crispy 
+      p.date.text-center 2022-06-15
+    .col-4
+      a(href='')
+        img.img-fluid.img-rounded(src='public/images/txl.png' alt='' 300px='')
+      p.tittle.text-center
+        a(href='')  TRUTH x LIE
+      p.date.text-center 2022-06-15
+    .col-4
+      a(href='')
+        img.img-fluid.img-rounded(src='public/images/face.jpg' alt='' 300px='')
+      p.tittle.text-center
+        a(href='') Face to Face
+      p.date.text-center 2022-06-15
+    .col-4
+      a(href='')
+        img.img-fluid.img-rounded(src='public/images/lin.png' alt='' 300px='')
+      p.tittle.text-center
+        a(href='') LIN
+      p.date.text-center 2022-06-15
+    .col-4
+      a(href='')
+        img.img-fluid.img-rounded(src='public/images/seeu.jpg' alt='' 300px='')
+      p.tittle.text-center
+        a(href='') Have a Nice Day
+      p.date.text-center 2022-06-15
+    .col-4
+      a(href='')
+        img.img-fluid.img-rounded(src='public/images/shu.png' alt='' 300px='')
+      p.tittle.text-center
+        a(href='') SHU
+      p.date.text-center 2022-06-15
+// content end
+// footer>.container>dl*5>dt+dd*4>a{項目$$}^^^p.copyright.text-center{copyright}
+footer
+  .container
+    .row
+      dl.col-3
+        dt A
+        dd
+          a(href='#') &#x9805;&#x76EE;01
+        dd
+          a(href='#') &#x9805;&#x76EE;02
+        dd
+          a(href='#') &#x9805;&#x76EE;03
+        dd
+          a(href='#') &#x9805;&#x76EE;04
+      dl.col-3
+        dt B
+        dd
+          a(href='#') &#x9805;&#x76EE;01
+        dd
+          a(href='#') &#x9805;&#x76EE;02
+        dd
+          a(href='#') &#x9805;&#x76EE;03
+        dd
+          a(href='#') &#x9805;&#x76EE;04
+      dl.col-3
+        dt C
+        dd
+          a(href='#') &#x9805;&#x76EE;01
+        dd
+          a(href='#') &#x9805;&#x76EE;02
+        dd
+          a(href='#') &#x9805;&#x76EE;03
+        dd
+          a(href='#') &#x9805;&#x76EE;04
+      dl.col-3
+        dt D
+        dd
+          a(href='#') &#x9805;&#x76EE;01
+        dd
+          a(href='#') &#x9805;&#x76EE;02
+        dd
+          a(href='#') &#x9805;&#x76EE;03
+        dd
+          a(href='#') &#x9805;&#x76EE;04
+  p.copyright.text-center &#x5B78;&#x7FD2;&#x4F7F;&#x7528; &#x975E;&#x5546;&#x696D;&#x7528;&#x9014;

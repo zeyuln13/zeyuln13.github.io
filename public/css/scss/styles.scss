@@ -1,23 +1,24 @@
 $primary-color: rgb(0, 0, 0);
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-ul, ol{
+ul,
+ol {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-body{
+body {
     margin: 0;
 }
 
-.container{
+.container {
     margin: auto;
     width: 90%;
     max-width: 1140px;
@@ -28,31 +29,31 @@ body{
 // ------------頁首---------------
 // -------------------------------
 header {
-background-color: rgba(175, 223, 124, 0.6);
+    background-color: rgba(175, 223, 124, 0.6);
 }
 
-header>.container>h1{
+header>.container>h1 {
     padding-top: 40px;
 }
 
-header>.container>h1>a{
-    color:$primary-color;
+header>.container>h1>a {
+    color: $primary-color;
 }
 
-header>.container>nav>ul{
+header>.container>nav>ul {
     display: flex;
     // justify-content: space-between;
 }
 
-header>.container>nav>ul>li{
+header>.container>nav>ul>li {
     margin-right: 30px;
 }
 
-header>.container>nav>ul>li>a{
+header>.container>nav>ul>li>a {
     line-height: 60px;
-color: $primary-color;
-font-size: 1.2em;
-letter-spacing: 3px;
+    color: $primary-color;
+    font-size: 1.2em;
+    letter-spacing: 3px;
 }
 
 // -------------------------------
@@ -60,11 +61,11 @@ letter-spacing: 3px;
 // -------------------------------
 
 // 圖片樣式
-.img-fluid{
+.img-fluid {
     width: 100%;
 }
 
-.img-rounded{
+.img-rounded {
     border-radius: 8px;
 }
 
@@ -73,117 +74,117 @@ letter-spacing: 3px;
 // }
 
 // 版塊樣式
-.row{
+.row {
     display: flex;
-    flex-wrap: wrap;  // 換行
+    flex-wrap: wrap; // 換行
 }
 
 // 文字樣式
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.text-justify{
+.text-justify {
     text-align: justify;
 }
 
-.tittle{
+.tittle {
     font-size: 12px;
 }
 
-.tittle a{
+.tittle a {
     color: black;
     font-size: 1.5em;
     font-weight: 700;
 }
 
-.tittle-left{
+.tittle-left {
     text-align: left;
     margin-left: 100px;
 }
 
-.date{
+.date {
     color: $primary-color;
 }
 
-div h2{
+div h2 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 // 四欄式
-.col-3{
+.col-3 {
     width: calc(100% / 4 - 30px);
     margin: 10px 15px 40px 15px;
     // background-color: rgba(44, 109, 175, 0.267);
     // 上右下左
-    }
-    
-    // 三欄式
-.col-4{
-// width: 33.33333%;
-width: calc(100% / 3 - 30px);
-margin: 0px 15px 40px 15px;
-// 上右下左
+}
+
+// 三欄式
+.col-4 {
+    // width: 33.33333%;
+    width: calc(100% / 3 - 30px);
+    margin: 0px 15px 40px 15px;
+    // 上右下左
 }
 
 
 // 二欄式
-.col-6{
+.col-6 {
     // width: 33.33333%;
     width: calc(100% / 2 - 30px);
     margin: 0px 15px 40px 15px;
     // 上右下左
-    }
+}
 
 // 二欄式
-.col-9{
+.col-9 {
     // width: 33.33333%;
     width: calc(100% / 1.33333 - 30px);
     margin: 10px 15px 30px 15px;
-    padding-top:40px;
+    padding-top: 40px;
     background-color: beige;
     border-radius: 15px;
     // 上右下左
-    }
+}
 
-    .col-4>img:hover{
-        opacity: 30%;
-    }
-    
+.col-4>img:hover {
+    opacity: 30%;
+}
+
 footer {
-background-color: $primary-color;
-padding: 40px 0 40px 0;
-    }
+    background-color: $primary-color;
+    padding: 40px 0 40px 0;
+}
 
-    dt{
-        font-size: 1.2em;
-        margin-bottom: 10px;
-        color: bisque;
-    }
+dt {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: bisque;
+}
 
-    dd{
-        margin-bottom: 4px;
-    }
+dd {
+    margin-bottom: 4px;
+}
 
-    dd>a{
-        color: rgb(255, 255, 255);
-    }
+dd>a {
+    color: rgb(255, 255, 255);
+}
 
-    .copyright{
-        color: bisque;
-    }
+.copyright {
+    color: bisque;
+}
 
-    .breadcrumb{
-        display: flex;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width:100%;
-    }
+.breadcrumb {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
 
-    .breadcrumb a{
-        color: black;
-    }
+.breadcrumb a {
+    color: black;
+}
 
 //     .w-20{
 // width: 20%;
@@ -193,7 +194,7 @@ padding: 40px 0 40px 0;
 // width: 80%;
 //     }
 
-.btn-primary{
+.btn-primary {
     background-color: rgb(0, 0, 0);
     padding: 15px;
     color: rgb(255, 255, 255);
@@ -203,48 +204,108 @@ padding: 40px 0 40px 0;
     border-radius: 15px;
 }
 
-main>div>div>a>img:hover{
+main>div>div>a>img:hover {
     opacity: 0.5;
 }
 
-aside a:hover{
+aside a:hover {
     background-color: rgba(78, 96, 59, 0.6);
 }
 
-.text-primary{
+.text-primary {
     color: black;
 
 }
 
-.img-wrap{
+.img-wrap {
     display: block;
     // background-color: rgb(9, 236, 142);
     position: relative;
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-.img-overlay{
+.img-overlay {
     overflow: hidden;
     border-radius: 8px;
 }
 
-.img-wrap img{
+.img-wrap img {
     vertical-align: top;
     transition: all 0.5s;
 }
+
 .img-wrap img:hover {
     transform: scale(1.5);
-  }
+}
 
-.icon-new{
+.icon-new {
     position: absolute;
     width: 80px;
     height: 20px;
     line-height: 20px;
-color: black;
-border-radius: 15px;
-background-color: rgb(254, 251, 48);
-top: -5px;
-left: -10px;
+    color: black;
+    border-radius: 15px;
+    background-color: rgb(254, 251, 48);
+    top: -5px;
+    left: -10px;
 }
 
+// icon-menu
+
+// 超過768以上執行 Start
+@media (min-width:768px) {
+    .icon-menu {
+        display: none;
+    }
+}
+
+// 超過768以上執行 end
+
+// 小於767px以下執行 Start
+@media (max-width:767px) {
+
+    h1 {
+        // width: 85%;
+        // background-color: rgb(228, 22, 22);
+        float: left;
+    }
+
+    .icon-menu {
+        float: right;
+        width: 15%;
+        display: block;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        line-height: 24px;
+        height: 30px;
+        margin-top: 50px;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    header>.container>nav {
+        width: 100%;
+        float: left;
+
+    }
+
+    header>.container>nav>ul {
+        display: block;
+    }
+
+    header>.container>nav>ul>li {
+        text-align: center;
+        width: 100%;
+    }
+
+    header>.container>nav>ul>li>a {
+        display: block;
+    }
+
+    .overflow-hidden {
+        overflow: hidden;
+    }
+}
+
+// 小於767px以下執行 end
