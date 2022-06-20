@@ -148,6 +148,12 @@ div h2 {
     }
 }
 
+@media (min-width:768px){
+    .order-md-1{
+        order:-1;
+    }
+}
+
 // // 三欄式
 // .col-4 {
 //     // width: 33.33333%;
