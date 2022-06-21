@@ -32,29 +32,112 @@ header {
     background-color: rgba(175, 223, 124, 0.6);
 }
 
-header>.container>h1 {
-    padding-top: 40px;
+header>.container h1 {
+    padding-top: 20px;
 }
 
-header>.container>h1>a {
+header>.container h1>a {
     color: $primary-color;
 }
 
-header>.container>nav>ul {
+header>.container nav>ul {
     display: flex;
     // justify-content: space-between;
 }
 
-header>.container>nav>ul>li {
-    margin-right: 30px;
+// header>.container nav>ul>li {
+// 若置中不寫這行
+//     // margin-right: 30px;
+// }
+
+header>.container nav>ul>li>a {
+    line-height: 60px;
+    color: yellow;
+    font-size: 1.2em;
+    letter-spacing: 2px;
 }
 
-header>.container>nav>ul>li>a {
-    line-height: 60px;
-    color: $primary-color;
-    font-size: 1.2em;
-    letter-spacing: 3px;
+//min-width 768 start
+
+@media (min-width:768px) {
+    header>.container nav {
+        width: 100%;
+    }
+
+    header>.container nav>ul>li {
+        position: relative;
+    }
+
+    header>.container nav>ul>li:hover .submenu {
+        display: block;
+    }
+
+    // 置中logo start
+
+    header {
+        position: relative;
+    }
+
+    header>.container h1 {
+        position: absolute;
+        left: 50%;
+        // margin-left: -102px;
+        transform: translateX(-50%);
+        // background-color: green;
+        line-height: 60px;
+        padding-top: 0px;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    header>.container nav>ul>li {
+        margin-left: 20px;
+        // margin-right: 20px;
+    }
+
+    header>.container nav>ul>li:nth-child(2) {
+        margin-right: 250px;
+    }
+
+    // 置中logo end
+
+    .submenu {
+        position: absolute;
+        background-color: $primary-color;
+        width: 160%;
+        left: 0px;
+        // bottom:0px;
+        top: 60px;
+        padding: 10px;
+        display: none;
+    }
+
+    .submenu>li {
+        line-height: 40px;
+    }
+
+    .submenu>li>a {
+        color: black;
+    }
+
 }
+
+//min-width 768 end
+
+// 針對超過1200視窗寬的優化 start
+// @media (min-width:1200px){
+//     header>.container nav>ul>li{
+//         margin-left:30px;
+//         margin-right: 30px;
+//     }
+//     header>.container nav>ul>li:nth-child(2){
+//         margin-right: 300px;
+//     }
+// }
+// 針對超過1200視窗寬的優化 end
 
 // -------------------------------
 // ------------內容區-------------
@@ -80,44 +163,32 @@ header>.container>nav>ul>li>a {
 }
 
 // 文字樣式
-.text-center {
+.text-center{
     text-align: center;
 }
-
-.text-justify {
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-justify{
     text-align: justify;
 }
 
-.tittle {
-    font-size: 12px;
-}
-
-.tittle a {
+.title a{
     color: black;
     font-size: 1.5em;
     font-weight: 700;
-}
-
-.tittle-left {
-    text-align: left;
-    margin-left: 100px;
 }
 
 .date {
     color: $primary-color;
 }
 
-div h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-// 四欄式
-.col-3 {
-    width: calc(100% / 4 - 30px);
-    margin: 10px 15px 40px 15px;
-    // background-color: rgba(44, 109, 175, 0.267);
-    // 上右下左
+h2 {
+    font-size: 2em;
+    margin: 60px auto 30px auto;
 }
 
 @for $i from 1 through 12 {
@@ -148,49 +219,13 @@ div h2 {
     }
 }
 
-@media (min-width:768px){
-    .order-md-1{
-        order:-1;
+@media (min-width:768px) {
+    .order-md-1 {
+        order: -1;
     }
 }
 
-// // 三欄式
-// .col-4 {
-//     // width: 33.33333%;
-//     width: calc(100% / 3 - 30px);
-//     margin: 0px 15px 40px 15px;
-//     // 上右下左
-// }
-
-// // 二欄式
-// .col-6 {
-//     // width: 33.33333%;
-//     width: calc(100% / 2 - 30px);
-//     margin: 0px 15px 40px 15px;
-//     // 上右下左
-// }
-
-// .col-8 {
-//     // width: 33.33333%;
-//     width: calc(100% / 1.5 - 30px);
-//     margin: 0px 15px 40px 15px;
-//     // 上右下左
-// }
-
-// // 二欄式
-// .col-9 {
-//     // width: 33.33333%;
-//     width: calc(100% / 1.33333 - 30px);
-//     margin: 10px 15px 30px 15px;
-//     padding-top: 40px;
-//     background-color: beige;
-//     border-radius: 15px;
-//     // 上右下左
-// }
-
-.col-4>img:hover {
-    opacity: 30%;
-}
+// 頁尾
 
 footer {
     background-color: $primary-color;
@@ -244,12 +279,9 @@ dd>a {
     border-radius: 15px;
 }
 
-main>div>div>a>img:hover {
-    opacity: 0.5;
-}
-
-aside a:hover {
-    background-color: rgba(78, 96, 59, 0.6);
+.btn-primary:hover{
+    background: black;
+    color:$primary-color;
 }
 
 .text-primary {
@@ -290,77 +322,181 @@ aside a:hover {
     left: -10px;
 }
 
-// icon-menu
-
-// 超過768以上執行 Start
-@media (min-width:768px) {
-    .icon-menu {
-        display: none;
-    }
+.flex-space-between {
+    justify-content: space-between;
 }
-
-// 超過768以上執行 end
 
 // 小於767px以下執行 Start
 @media (max-width:767px) {
 
-    header {
-        height: 80px;
-    }
+    // header {
+    //     height: 80px;
+    // }
 
-    h1 {
-        // width: 85%;
-        // background-color: rgb(228, 22, 22);
-        float: left;
-        margin-top: -20px;
-    }
+    // h1 {
+    //     width: 85%;
+    //     color: black;
+    //     // float: left;
+    //     // margin-top: -20px;
+    // }
 
     .icon-menu {
-        float: right;
+        // float: right;
         width: 15%;
         display: block;
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
-        line-height: 30px;
-        height: 30px;
-        margin-top: 25px;
-        font-size: 18px;
-        text-align: center;
+        background-color: blue;
+        color: rgb(224, 8, 8);
         border-radius: 15px;
+        line-height: 60px;
+        text-align: center;
+        // height: 30px;
+        // margin-top: 25px;
+        // font-size: 18px;
     }
 
-    header>.container>nav {
-        width: 100%;
-        float: left;
+    header {
+        position: relative;
+    }
 
+    header>.container nav {
+        width: 100%;
+        position: absolute;
+        top: 57px;
+        left: 0px;
+        background-color: rgb(190, 112, 112);
+        text-align: center;
+    }
+
+    nav{
+        // viewport width
+        left:0px;
+        // 這一行等二層選單做完之後在打開
+        left:-100vw;
+        transition: all .3s;
+    }
+    // 之後搭配javascript要改寫選取器的寫法
+
+    .icon-menu:hover + nav{
+        left:0px;
+
+        // 需要從上往下出現導覽時打開以下程式碼
+        // height: 244px;
+    }
+
+    header>.container>nav.active {
+        display: block;
     }
 
     header>.container>nav>ul {
         display: block;
     }
 
-    header>.container>nav.active {
-        display: none;
-    }
-
-    header>.container>nav>ul>li {
+    header>.container nav>ul>li {
         text-align: center;
         width: 100%;
+        border-bottom: 3px solid rgba(239, 114, 133, 0.267);
     }
 
-    header>.container>nav>ul>li>a {
+    header>.container nav>ul>li>a {
         display: block;
     }
 
-    .overflow-hidden {
-        overflow: hidden;
+    .submenu {
+        display: none;
+        background-color: rgb(220, 0, 0);
     }
+
+    header>.container nav>ul>li:hover .submenu {
+        display: block;
+    }
+
+    .submenu>li {
+        line-height: 60px;
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+    .submenu>li>a {
+        color: rgb(244, 244, 244);
+        display: block;
+    }
+
+    // .overflow-hidden {
+    //     overflow: hidden;
+    // }
+}
+// 小於767px以下執行 end
+
+.col-4>img:hover {
+    opacity: 30%;
 }
 
-// 小於767px以下執行 end
+main>div>div>a>img:hover {
+    opacity: 0.5;
+}
+
+aside a:hover {
+    background-color: rgba(78, 96, 59, 0.6);
+}
+// icon-menu
+
+// 超過768以上執行 Start
+
+@media (min-width:768px) {
+    .icon-menu {
+        display: none;
+    }
+} // 超過768以上執行 end
 
 @for $i from 1 through 10 {
     .fz-#{$i} {
         font-size: $i*1em;
     }
 }
+
+@for $i from 1 through 5 {
+    .mb-#{$i} {
+        margin-bottom: $i * 1em;
+    }
+}
+
+// // 四欄式
+// .col-3 {
+//     width: calc(100% / 4 - 30px);
+//     margin: 10px 15px 40px 15px;
+//     // background-color: rgba(44, 109, 175, 0.267);
+//     // 上右下左
+// }
+
+// // // 三欄式
+// // .col-4 {
+// //     // width: 33.33333%;
+// //     width: calc(100% / 3 - 30px);
+// //     margin: 0px 15px 40px 15px;
+// //     // 上右下左
+// // }
+
+// // // 二欄式
+// // .col-6 {
+// //     // width: 33.33333%;
+// //     width: calc(100% / 2 - 30px);
+// //     margin: 0px 15px 40px 15px;
+// //     // 上右下左
+// // }
+
+// // .col-8 {
+// //     // width: 33.33333%;
+// //     width: calc(100% / 1.5 - 30px);
+// //     margin: 0px 15px 40px 15px;
+// //     // 上右下左
+// // }
+
+// // // 二欄式
+// // .col-9 {
+// //     // width: 33.33333%;
+// //     width: calc(100% / 1.33333 - 30px);
+// //     margin: 10px 15px 30px 15px;
+// //     padding-top: 40px;
+// //     background-color: beige;
+// //     border-radius: 15px;
+// //     // 上右下左
+// // }

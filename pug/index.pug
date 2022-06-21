@@ -1,32 +1,44 @@
 doctype html
-head
-  meta(charset='UTF-8')
-  meta(http-equiv='X-UA-Compatible' content='IE=edge')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title zeyuln's
-  link(rel='stylesheet' href='public/css/styles.css')
-// header>.container>h1{ZYL}+nav>ul>li*4>a[href"#"]{mu1}
-header 
-  .container.overflow-hidden
-    a.icon-menu(href="#") menu
-    h1
-      a(href='index.html') zeyuln's portfolio
-    nav.active
-      ul
-        li
-          a(href='') 關於我
-        li
-          a(href='design-list.html') 平面設計
-        li
-          a(href='') 網頁設計
-        li
-          a(href='') 聯絡我
-// header end
+html
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Ayn's Portfolio
+    link(rel='stylesheet', href='public/css/styles.css')
+  body
+    header
+      .container
+        .row.flex-space-between
+          h1
+            a(href='index.html') Zeyuln's Portfolio
+          a.icon-menu(href="#") menu
+          nav
+            ul
+              li
+                  a(href='about-us.html') 關於我
+              li
+                  a(href='#') 平面設計
+                  ul.submenu
+                    li
+                      a(href="design-list.html") 品牌設計
+                    li 
+                      a(href="design-list.html") 包裝設計  
+              li
+                  a(href='#') 網頁設計
+                  ul.submenu
+                    li
+                      a(href="") 品牌設計
+                    li 
+                      a(href="") 包裝設計  
+              li
+                  a(href='contact-us.html') 聯絡我
+    // header end
 img.img-fluid(src='public/images/header.png' alt='')
 // content start
 // .container>h1{最新作品一覽}+.row>.<div class="col-4">*6>img.img-fluid+p.tittle>a[href="#"]{標題$}^p.description{內容}
 .container
-  h2.text-center 最新作品
+  h2.fz-3.mb-3.text-center 最新作品
   .row
     // .col-md-4*7>a>img[src="" 300px 300px alt="" class="img-fluid img-rounded"]^p.tittle text-center>a{作品$}^p.date.text-center{2022-06-15}
     .col-6.col-md-4.col-lg-3
