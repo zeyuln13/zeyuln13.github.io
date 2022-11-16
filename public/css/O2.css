@@ -85,6 +85,15 @@ section nav>ul>li>a:hover {
     opacity: 75%;
 }
 
+section nav>ul>li.active {
+    background-color: green;
+    /* transition: 0.3 ease background-color; */
+}
+
+section nav>ul>li.active a {
+    color: lightblue;
+}
+
 /* section nav>ul>li>a:before {
     border-bottom: 2px solid rgb(202, 255, 245);
 }
@@ -114,7 +123,19 @@ section nav>ul>li>a:after {
     line-height: 30px;
 }
 
-.about-pages div:nth-child(1) {
+#about {
+    background-color: red;
+}
+
+#web {
+    background-color: blue;
+}
+
+#contact {
+    background-color: yellow;
+}
+
+/* .about-pages div:nth-child(1) {
     background-color: rgb(56, 134, 89);
 }
 
@@ -128,7 +149,9 @@ section nav>ul>li>a:after {
 
 .about-pages div:nth-child(4) {
     background-color: rgb(220, 153, 161);
-}
+} */
+
+
 
 
 /* footer{
