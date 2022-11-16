@@ -1,25 +1,25 @@
 * {
     margin: 0;
     padding: 0;
-  }
-  
-  ul,
-  ol {
+}
+
+ul,
+ol {
     list-style-type: none;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
     width: auto;
-    /* color: rgb(64, 61, 61); */
-  }
-  
-  body {
+    /* color: rgb(247, 0, 0); */
+}
+
+body {
     margin: 0;
     overflow-x: hidden;
     width: 100%;
     font-family: sans-serif;
-  }
+}
 
 header {
     height: 100vh;
@@ -32,7 +32,7 @@ header {
 }
 
 .about {
-    height: 300vh;
+    height: 100vh;
     display: flex;
 }
 
@@ -45,14 +45,55 @@ header {
     font-size: 20px;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    margin: 0!important;
+    margin: 0 !important;
     text-align: right;
+    cursor: pointer;
+    z-index: 10000;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: sticky;
 }
 
-section>.about-pages>nav{
+
+/* section nav {
     display: block;
+} */
+
+section nav>ul {
+    display: block;
+    /* background-color: rgb(234, 4, 4); */
 }
 
+section nav>ul>li {
+    border-bottom: 1px;
+    letter-spacing: 0.25em;
+    color: green;
+    font-size: 15px;
+    margin: 26px;
+}
+
+section nav>ul>li>a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    padding: 1em 0;
+    border-bottom: 2px solid rgb(202, 255, 245);
+}
+
+section nav>ul>li>a:hover {
+    opacity: 75%;
+}
+
+/* section nav>ul>li>a:before {
+    border-bottom: 2px solid rgb(202, 255, 245);
+}
+
+section nav>ul>li>a:after {
+    border-bottom: 2px solid rgb(189, 151, 54);
+} */
+
+/* 2 */
 .about-pages {
     height: 100vh;
     width: 80%;
@@ -84,6 +125,11 @@ section>.about-pages>nav{
 .about-pages div:nth-child(3) {
     background-color: rgb(0, 255, 195);
 }
+
+.about-pages div:nth-child(4) {
+    background-color: rgb(220, 153, 161);
+}
+
 
 /* footer{
     height: 30vh;
