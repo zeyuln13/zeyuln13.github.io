@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>033's Portfolio</title>
     <link rel="stylesheet" href="public/css/O2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="public/js/WOW-master/css/libs/animate.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- slick css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!-- slick theme css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 
 <body>
@@ -18,42 +25,133 @@
         <div class="about-title">
             <nav>
                 <ul>
-                    <li class="#about"><a href="#about">關於我</a></li>
+                    <li class="active"><a href="#about">關於我</a></li>
                     <li class="#web"><a href="#web">UI/UX & 網頁設計</a></li>
-                    <li class="#contact"><a href="#contact">平面設計</a></li>
-                    <li><a href="#">聯絡我</a></li>
+                    <li class="#graphic"><a href="#graphic">平面設計</a></li>
+                    <li class="#contact"><a href="#contact">聯絡我</a></li>
                 </ul>
             </nav>
         </div>
 
         <div class="about-pages">
 
-            <div id="about">
-                <h2>hi its me</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic dicta magni neque labore sint ipsum,
-                    saepe sequi iste odit ipsa voluptas consequatur odio nesciunt ex eius repellendus totam magnam
-                    perspiciatis?
-                </p>
-            </div>
+            <section id="about" class="wow fadeInDown" data-wow-duration="2s" data-wow-offset="1">
+                <div class="inner">
+                    <h2>hi its me</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic dicta magni neque labore sint
+                        ipsum,
+                        saepe sequi iste odit ipsa voluptas consequatur odio nesciunt ex eius repellendus totam magnam
+                        perspiciatis?
+                    </p>
+                </div>
+            </section>
 
-            <div id="web" class="wrapper">
-                <h2>hi its me</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic dicta magni neque labore sint ipsum,
-                    saepe sequi iste odit ipsa voluptas consequatur odio nesciunt ex eius repellendus totam magnam
-                    perspiciatis?
-                </p>
-            </div>
+            <section id="web" class="wow fadeInDown" data-wow-duration="2s">
+                <div class="inner">
+                    <h2 class="wow fadeInDown">UI / UX & 網頁設計</h2>
+                    <p class="wow fadeInDown">
+                        今年透過在職訓的課程中接觸網頁與UI/UX的領域，雖然資歷資淺但在課程中學習到團體合作交流溝通與個人獨立作業的磨練，而後也透過網課增進了UI/UX及Figma的知識與技能，並希望在美感設計與使用者體驗下，力求做出實與美並進的設計。
+                    </p>
+                </div>
 
-            <div id="contact" class="wrapper">
-                <h2>hi its me</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic dicta magni neque labore sint ipsum,
-                    saepe sequi iste odit ipsa voluptas consequatur odio nesciunt ex eius repellendus totam magnam
-                    perspiciatis?
-                </p>
-            </div>
+                <div class="features">
+                    <section class="col-4 col-sm-12">
+
+                        <div class="img-overlay col-4 col-sm-12">
+                            <a class="img-overlay" href="https://zeyuln13.github.io/hikarioka/index.html" target="_blank"><img class="img-overlay img-fluid"
+                                    src="public/images/hikarioka.png" alt="hikarioka" width="331px" height="175px"></a>
+                        </div>
+
+                        <div class="img-overlay col-4 col-sm-12">
+                            <a class="img-overlay" href="https://www.behance.net/gallery/157137983/App-UIUX-Design-events" target="_blank"><img class="img-overlay img-fluid"
+                                    src="public/images/events.png" alt="events" width="331px" height="175px"></a>
+                        </div>
+
+                        <div class="img-overlay col-4 col-sm-12">
+                            <a class="img-overlay" href="https://www.figma.com/proto/Wj4DFmu3VTg1T6s42ml3xr/Homework?page-id=0%3A1&node-id=302%3A2771&viewport=-535%2C-1841%2C0.12&scaling=scale-down&starting-point-node-id=302%3A2805" target="_blank"><img class="img-overlay img-fluid"
+                                    src="public/images/lumix.png" alt="lumix" width="331px" height="175px"></a>
+                        </div>
+
+                        <div class="img-overlay col-4 col-sm-12">
+                            <a class="img-overlay" href="https://www.behance.net/gallery/154395421/Daily-UI-001-Sign-Up"><img class="img-overlay img-fluid"
+                                    src="public/images/sign.png" alt=Sign-Up" width="331px" height="175px"></a>
+                        </div>
+
+                        <div class="img-overlay col-4 col-sm-12">
+                            <a class="img-overlay" href="https://drive.google.com/drive/folders/1msm4nmhsHBClkYfQnKDgev7pHrbD60oz?usp=share_link"><img class="img-overlay img-fluid"
+                                    src="public/images/train.png" alt="職訓成果" width="331px" height="175px"></a>
+                        </div>
+
+                        <div class="img-overlay col-4 col-sm-12">
+                            <a class="img-overlay" href="https://drive.google.com/drive/folders/1RFsPYTK1tMXPGCxKvUXNpNGWRCs6vVia?usp=sharing" target="_blank"><img class="img-overlay img-fluid"
+                                    src="public/images/hahow.jpeg" alt="網課成果" width="331px" height="175px"></a>
+                        </div>
+
+
+                        <!-- <div class="img-overlay col-4 col-sm-12">
+                            <img class="img-fluid" src="public/images/events.png" alt="" width="331px" height="175px">
+                        </div>
+
+                        <div class="img-overlay col-4 col-sm-12">
+                            <img class="img-fluid" src="public/images/events.png" alt="" width="331px" height="175px">
+                        </div>
+
+                        <div class="img-overlay col-4 col-sm-12">
+                            <img class="img-fluid" src="public/images/events.png" alt="" width="331px" height="175px">
+                        </div>
+
+                        <div class="img-overlay col-4 col-sm-12">
+                            <img class="img-fluid" src="public/images/events.png" alt="" width="331px" height="175px">
+                        </div>
+                        <div class="img-overlay col-4 col-sm-12">
+                            <img class="img-fluid" src="public/images/events.png" alt="" width="331px" height="175px">
+                        </div> -->
+
+                        <!-- 2 -->
+
+                        <!-- <div class="container col-4 col-sm-12">
+                            <a href="https://zeyuln13.github.io/hikarioka/index.html">
+                                <img class="img-fluid" src="public/images/hikarioka.png" alt="" width="331px" height="175px">
+                            </a>
+                            <div class="img-overlay">
+                                <div class="content">
+                                    <h3>ji its me</h3>
+                                    <p>ko 000</p>
+                                </div>
+                            </div>
+                        </div> -->
+
+                    </section>
+                </div>
+
+            </section>
+
+            <section id="graphic" class="wow fadeInDown" data-wow-duration="2s">
+                <div class="inner">
+                    <h2>hi its me</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic dicta magni neque labore sint
+                        ipsum,
+                        saepe sequi iste odit ipsa voluptas consequatur odio nesciunt ex eius repellendus totam magnam
+                        perspiciatis?
+                    </p>
+                </div>
+            </section>
+
+            <section id="contact" class="wow fadeInDown" data-wow-duration="2s">
+                <div class="inner">
+                    <h2>hi its me</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic dicta magni neque labore sint
+                        ipsum,
+                        saepe sequi iste odit ipsa voluptas consequatur odio nesciunt ex eius repellendus totam magnam
+                        perspiciatis?
+                    </p>
+                </div>
+            </section>
+
         </div>
+
     </section>
-    
+
 
 
 
@@ -67,7 +165,48 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <!-- slick js -->
+    <script src="public/js/WOW-master/dist/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="public/js/O1.js"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+        var wow = new WOW(
+            {
+                boxClass: '#about',      // 要套用WOW.js縮需要的動畫class(預設是wow)
+                animateClass: 'fadeInDown', // 要"動起來"的動畫(預設是animated, 因此如果你有其他動畫library要使用也可以在這裡調整)
+                offset: 0,          // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
+                mobile: true,       // 手機上是否要套用動畫 (預設是true)
+                live: true,       // 非同步產生的內容是否也要套用 (預設是true, 非常適合搭配SPA)
+                callback: function (box) {
+                    // 當每個要開始時, 呼叫這裡面的內容, 參數是要開始進行動畫特效的element DOM
+                },
+                scrollContainer: null // 可以設定成只套用在某個container中捲動才呈現, 不設定就是整個視窗
+            }
+        );
+        wow.init();
+    </script>
+    <!-- <script>
+        let section = document.querySelectorAll('.about-pages');
+        let navLinks = document.querySelectorAll('section nav ul li a');
+
+        window.onscroll = () =>{
+
+            section.forEach(sec =>{
+
+            let.Top = window scrollY;
+            let offset = sec.offsetTop;
+            letHeight = offsetHeight;
+            let id = sec.getAttribute('id');
+
+    };
+    </script> -->
 </body>
 
 </html>
