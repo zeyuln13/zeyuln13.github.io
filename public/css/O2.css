@@ -171,6 +171,7 @@ section nav>ul>li>a:after {
     color: white;
 }
 
+
 .about-pages section>h2 {
     display: block;
     right: 150em;
@@ -307,7 +308,7 @@ section>.about-pages .inner {
     --row-height: 200px;
 
     box-sizing: border-box;
-    padding: 4em 3em 0em 3em;
+    padding: 4.2em 3em 0em 3em;
 
     display: grid;
     grid-template-columns: repeat(var(--num-cols), 1fr);
