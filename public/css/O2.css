@@ -242,6 +242,14 @@ section>.about-pages .inner {
         width: 65em;
     }
 
+    .img-grid {
+        grid-auto-rows: var(--row-height);
+    }
+
+    .over-lg {
+        display: none;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -278,7 +286,14 @@ section>.about-pages .inner {
     section>.about-pages .inner {
         padding: 3em 2em 1em 2em;
     }
+
+    .sm-2 {
+        padding-bottom: 20px;
+    }
+
 }
+
+
 
 .bg-cover {
     background-position: center center;
@@ -296,7 +311,7 @@ section>.about-pages .inner {
 
     display: grid;
     grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: var(--row-height);
+    /* grid-auto-rows: var(--row-height); */
     gap: var(--gap);
 }
 
@@ -319,13 +334,26 @@ section>.about-pages .inner {
 }
 
 /* Anything udner 1024px */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
     .img-grid {
         --num-cols: 2;
         --row-height: 200px;
+        padding: 4em 2em 0em 2em;
     }
 
-    /* .lego {
+
+.over-sm {
+    display: none;
+}
+
+.img-grid div {
+    padding: 2em 0em 1em 0em;
+}
+}
+
+
+
+/* .lego {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -357,7 +385,7 @@ section>.about-pages .inner {
     grid-column: 1/3;
 } */
 
-    /* .about-pages div:nth-child(1) {
+/* .about-pages div:nth-child(1) {
     background-color: rgb(56, 134, 89);
 }
 
@@ -374,7 +402,7 @@ section>.about-pages .inner {
 } */
 
 
-    /* footer{
+/* footer{
     height: 30vh;
     display: flex;
     justify-content: center;
@@ -382,7 +410,7 @@ section>.about-pages .inner {
     background-color: bisque;
 } */
 
-    /* 
+/* 
 .img-overlay {
     overflow: hidden;
     position: absolute;
@@ -391,17 +419,17 @@ section>.about-pages .inner {
     bottom: 0;
     right: 0;
     opacity: 0; */
-    /* transition: opacity 0.4s ease-in-out; */
-    /* background: black;
+/* transition: opacity 0.4s ease-in-out; */
+/* background: black;
     cursor: pointer;
   } */
 
-    /* .container{
+/* .container{
     position: absolute;
     /* top: 40%;
     left: 40%; */
-    /* transform: translate(-50%, -50%); */
-    /* }
+/* transform: translate(-50%, -50%); */
+/* }
 
   .content{
     position: relative;
@@ -418,7 +446,7 @@ section>.about-pages .inner {
 
 
 
-    /* .features {
+/* .features {
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -430,5 +458,5 @@ section>.about-pages .inner {
     border-radius: 0.25em;
     /* border: solid 1px rgba(0, 0, 0, 0.15);
     background: rgba(0, 0, 0, 0.05); */
-    /* margin: 0 0 2em 0; */
-    /* } */
+/* margin: 0 0 2em 0; */
+/* } */
