@@ -197,11 +197,11 @@ section>.about-pages .inner {
     max-width: 100%;
 }
 
-.profile{
+.profile {
     display: flex;
 }
 
-.font-s{
+.font-s {
     font-size: 1.1em;
     line-height: 30px;
 }
@@ -253,15 +253,27 @@ section>.about-pages .profile {
     --num: calc(12 / 3);
     width: calc(100% / var(--num) - 30px);
     margin: 0px 15px 0px 15px;
-  }
+}
 
-  .max-w350 {
-    max-width: 350px;
-  }
+.col-6 {
+    --num: calc(12 / 6);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 0px 15px;
+}
 
-  .mt-60{
+.col-6b {
+    --num: calc(12 / 6);
+    width: calc(70% / var(--num) - 30px);
+    margin: 0px 15px 0px 15px;
+}
+
+.max-w350 {
+    max-width: 200px;
+}
+
+.mt-60 {
     margin-top: 60px;
-  }
+}
 
 @media (min-width: 767px) {
     section>.about-pages .inner {
@@ -283,14 +295,14 @@ section>.about-pages .profile {
 
 }
 
-.h2-c{
+.h2-c {
     text-align: center;
     margin: 0 0 0 0;
 }
 
-.p-c{
+.p-c {
     text-align: center;
-    
+
 }
 
 
