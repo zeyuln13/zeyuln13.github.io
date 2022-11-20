@@ -49,6 +49,8 @@ img {
     opacity: 0.8;
 } */
 
+
+
 section {
     display: block;
     margin: 0;
@@ -138,13 +140,12 @@ section nav>ul>li>a:hover {
     opacity: 75%;
 }
 
-/* section nav>ul>li.active {
-    background-color: crimson;
-    transition: 0.3s ease background-color;
-} */
+section nav>ul>li.active {
+    transition: ease-in-out;
+}
 
 section nav>ul>li.active a {
-    color: rgba(13, 20, 128, 0.951);
+    transition: ease-in-out;
 }
 
 /* section nav>ul>li>a:before {
@@ -190,8 +191,23 @@ section nav>ul>li>a:after {
     background-color: rgb(72, 132, 133);
 }
 
+/* 1 */
 section>.about-pages .inner {
     padding: 3em 3em 0em 3em;
+    max-width: 100%;
+}
+
+.profile{
+    display: flex;
+}
+
+.font-s{
+    font-size: 1.1em;
+    line-height: 30px;
+}
+
+section>.about-pages .profile {
+    padding: 3em 3em 3em 3em;
     max-width: 100%;
 }
 
@@ -233,6 +249,20 @@ section>.about-pages .inner {
     transition: opacity 0.4s ease-in-out;
 }
 
+.col-3 {
+    --num: calc(12 / 3);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 0px 15px;
+  }
+
+  .max-w350 {
+    max-width: 350px;
+  }
+
+  .mt-60{
+    margin-top: 60px;
+  }
+
 @media (min-width: 767px) {
     section>.about-pages .inner {
         width: 65em;
@@ -252,6 +282,17 @@ section>.about-pages .inner {
     }
 
 }
+
+.h2-c{
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.p-c{
+    text-align: center;
+    
+}
+
 
 @media (max-width: 768px) {
     .col-sm-12 {
@@ -343,13 +384,13 @@ section>.about-pages .inner {
     }
 
 
-.over-sm {
-    display: none;
-}
+    .over-sm {
+        display: none;
+    }
 
-.img-grid div {
-    padding: 2em 0em 1em 0em;
-}
+    .img-grid div {
+        padding: 2em 0em 1em 0em;
+    }
 }
 
 
