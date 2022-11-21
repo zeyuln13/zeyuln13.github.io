@@ -263,16 +263,16 @@ section>.about-pages .profile {
 
 .col-6b {
     --num: calc(12 / 6);
-    width: calc(70% / var(--num) - 30px);
-    margin: 0px 15px 0px 15px;
+    width: calc(55% / var(--num) - 30px);
+    margin: 0px 15px 0px 30px;
 }
 
-.max-w350 {
+.max-w200 {
     max-width: 200px;
 }
 
-.mt-60 {
-    margin-top: 60px;
+.mt-30 {
+    margin-top: 30px;
 }
 
 @media (min-width: 767px) {
@@ -328,7 +328,7 @@ section>.about-pages .profile {
     }
 
     #web,
-    #graphic {
+    #graphic, #about {
         height: auto;
     }
 
