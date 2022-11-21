@@ -181,7 +181,7 @@ header {
 
 
 .about {
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
 }
 
@@ -201,7 +201,7 @@ header {
     left: 0;
     overflow-x: hidden;
     overflow-y: auto;
-    position: sticky;
+    position: fixed;
 }
 
 
@@ -253,8 +253,13 @@ section nav>ul>li>a:after {
 
 /* 2 */
 .about-pages {
-    height: 100vh;
+    /* height: 100vh; */
     width: 80%;
+    position: relative;
+}
+
+.about-pages, .about-title {
+    margin-left: 22em;
 }
 
 .about-pages>section {
@@ -319,6 +324,7 @@ section>.about-pages .profile {
 
 #contact {
     background-color: rgb(72, 132, 133);
+    height: 50vh;
 }
 
 /* web page */
@@ -460,6 +466,11 @@ section>.about-pages .profile {
         padding-bottom: 40px;
     }
 
+    .about-pages, .about-title {
+        margin-left: 0em;
+    }
+    
+
 }
 
 
@@ -527,6 +538,11 @@ section>.about-pages .profile {
     .profile {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    section>.about-pages .profile {
+        text-align: center;
+        max-width: 100%;
     }
 
 }
