@@ -15,7 +15,7 @@
 var controller = new ScrollMagic.Controller(); // create a scene
 
 new ScrollMagic.Scene({
-  duration: '300%',
+  duration: '400%',
   // the scne should last for a scroll distance of 100px
   // offset: 50, // start this scene after scrolling for 50px
   triggerElement: '.about-title',
