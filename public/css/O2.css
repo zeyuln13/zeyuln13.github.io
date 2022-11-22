@@ -580,11 +580,10 @@ section>.about-pages .profile {
         background-attachment: scroll;
     }
 
-
     .about-title {
         height: 3.5em;
         left: 0;
-        line-height: 3.5em;
+        line-height: 0em;
         overflow: hidden;
         padding: 0;
         text-align: center;
@@ -610,7 +609,7 @@ section>.about-pages .profile {
     .about-pages {
         /* height: 100vh; */
         width: 100%;
-        /* position: relative; */
+        position: relative;
     }
 
     .about-title,
@@ -618,4 +617,16 @@ section>.about-pages .profile {
         margin-left: 0;
         /* padding-top: 3.5em; */
     }
+
+    section>.about-pages .inner {
+        padding: 4em 3em 0em 3em;
+        max-width: 100%;
+    }
+
+    section>.about-pages .profile {
+        padding: 4em 3em 0em 3em;
+
+    }
+    
 }
+
