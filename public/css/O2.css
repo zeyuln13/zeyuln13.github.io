@@ -391,7 +391,7 @@ section>.about-pages .profile {
     margin-top: 200px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 737px) {
     section>.about-pages .inner {
         width: 65em;
     }
@@ -432,7 +432,7 @@ section>.about-pages .profile {
 }
 
 
-@media (max-width: 738px) {
+@media (max-width: 736px) {
     .col-sm-12 {
         --num: calc(12 / 12);
         width: calc(100% / var(--num) - 30px);
@@ -615,11 +615,12 @@ section>.about-pages .profile {
     .about-title,
     .about-pages {
         margin-left: 0;
+        margin-right: 0;
         /* padding-top: 3.5em; */
     }
 
     section>.about-pages .inner {
-        padding: 4em 3em 0em 3em;
+        padding: 3em 3em 0em 3em;
         max-width: 100%;
     }
 
@@ -627,6 +628,12 @@ section>.about-pages .profile {
         padding: 4em 3em 0em 3em;
 
     }
+
+    .about-pages>section {
+        height: auto;
+    }
+
+
     
 }
 
