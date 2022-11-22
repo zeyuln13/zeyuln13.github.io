@@ -567,6 +567,11 @@ section>.about-pages .profile {
         padding: 0em 0em 2em 0em;
     }
 
+    .about-title,
+    .about-pages {
+        padding-top: 0em;
+    }
+
 }
 
 @media screen and (max-width: 1280px) {
@@ -608,8 +613,9 @@ section>.about-pages .profile {
         /* position: relative; */
     }
 
-    .about-title, .about-pages{
+    .about-title,
+    .about-pages {
         margin-left: 0;
-        padding-top: 3.5em;
+        /* padding-top: 3.5em; */
     }
 }
