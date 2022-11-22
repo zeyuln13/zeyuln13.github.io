@@ -11,6 +11,7 @@ ol {
 a {
     text-decoration: none;
     width: auto;
+    color: inherit;
     /* color: rgb(247, 0, 0); */
 }
 
@@ -31,7 +32,8 @@ body {
     font-family: sans-serif;
 }
 
-h2 {
+h2,
+h3 {
     margin: 0 0 0.5em 0;
 }
 
@@ -57,11 +59,11 @@ img {
 
 .arrow {
     position: absolute;
-    transform: translate(-50%, -50%);
-    bottom: 0;
+    transform: translate(-30%, -50%);
+    bottom: 5%;
     /* justify-content: center;
     align-items: center; */
-    padding: 6em 3em 0em 5em;
+    padding: 5em 3em 0em 5em;
     max-width: 100%;
 }
 
@@ -387,21 +389,26 @@ section>.about-pages .profile {
     margin-top: 30px;
 }
 
+.ml-15 {
+    margin-left: 15px;
+}
+
 .mt-200 {
     margin-top: 200px;
 }
 
 @media (min-width: 737px) {
-    section>.about-pages .inner {
+    /* notice */
+    /* section>.about-pages .inner {
         width: 65em;
-    }
+    } */
 
     section>.about-pages .inner-b {
         width: 65em;
     }
 
     .features>section {
-        padding: 1em 3em 1em 1.5em;
+        padding: 1em 0em 1em 1em;
         width: 65em;
     }
 
@@ -430,6 +437,8 @@ section>.about-pages .profile {
 
 
 }
+
+
 
 
 @media (max-width: 736px) {
@@ -461,7 +470,8 @@ section>.about-pages .profile {
 
     #web,
     #graphic,
-    #about {
+    #about,
+    #contact {
         height: auto;
     }
 
@@ -556,11 +566,17 @@ section>.about-pages .profile {
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .bg {
-        opacity: 0.5;
+        opacity: 0.3;
+        max-width: 90%;
+        height: auto;
+        margin: 0;
+        right: 5.5%;
+        top: 5;
+        /* z-index: -1; */
     }
 
     .arrow {
@@ -572,9 +588,14 @@ section>.about-pages .profile {
         padding-top: 0em;
     }
 
+
 }
 
 @media screen and (max-width: 1280px) {
+
+    h1 {
+        font-size: 2.75em;
+    }
 
     #cover {
         background-attachment: scroll;
@@ -620,12 +641,12 @@ section>.about-pages .profile {
     }
 
     section>.about-pages .inner {
-        padding: 3em 3em 0em 3em;
+        padding: 5em 3em 0em 3em;
         max-width: 100%;
     }
 
     section>.about-pages .profile {
-        padding: 4em 3em 0em 3em;
+        padding: 5em 3em 0em 3em;
 
     }
 
@@ -633,7 +654,63 @@ section>.about-pages .profile {
         height: auto;
     }
 
+    .col-md-6 {
+        --num: calc(12 / 6);
+        width: calc(100% / var(--num) - 30px);
+        margin: 0px 15px 40px 15px;
+    }
 
-    
+    .features>section {
+        /* padding: 1em 2em 1em 2em; */
+        width: 45em;
+    }
+
+
+
+    #contact {
+        background-color: rgb(37, 37, 37);
+        height: auto;
+    }
+
+    .bg {
+        opacity: 0.3;
+    }
+
+    .img-grid div {
+        padding: 2em 0em 0em 0em;
+    }
+
+    .img-grid {
+        padding: 4.2em 3em 3em 3em;
+    }
+
 }
 
+
+
+ul.contact-l>li {
+    padding: 0;
+    margin: 1.5em 0 0 0;
+}
+
+footer {
+    margin: 8em 0em 3em 0em;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 736px) {
+    .col-sm-12 {
+        --num: calc(12 / 12);
+        width: calc(100% / var(--num) - 30px);
+        /* margin: 0px 0px 0px 0px; */
+    }
+
+    .col-sm-12a {
+        --num: calc(12 / 12);
+        width: calc(100% / var(--num) - 5px);
+        /* margin: 0px 0px 0px 0px; */
+    }
+
+
+}
