@@ -607,4 +607,9 @@ section>.about-pages .profile {
         width: 100%;
         /* position: relative; */
     }
+
+    .about-title, .about-pages{
+        margin-left: 0;
+        padding-top: 3.5em;
+    }
 }
