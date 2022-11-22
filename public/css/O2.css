@@ -29,7 +29,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     width: 100%;
-    font-family: sans-serif;
+    font-family: sans-serif; 
 }
 
 h2,
@@ -378,7 +378,7 @@ section>.about-pages .profile {
 .col-6b {
     --num: calc(12 / 6);
     width: calc(55% / var(--num) - 30px);
-    margin: 0px 15px 0px 30px;
+    margin: 0px 25px 0px 30px;
 }
 
 .max-w200 {
@@ -566,7 +566,7 @@ section>.about-pages .profile {
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .bg {
@@ -588,14 +588,13 @@ section>.about-pages .profile {
         padding-top: 0em;
     }
 
-
+    section>.about-pages .inner-b {
+        padding: 0em 0em 0em 0em;
+    }
 }
 
 @media screen and (max-width: 1280px) {
 
-    h1 {
-        font-size: 2.75em;
-    }
 
     #cover {
         background-attachment: scroll;
@@ -682,6 +681,10 @@ section>.about-pages .profile {
 
     .img-grid {
         padding: 4.2em 3em 3em 3em;
+    }
+
+    .h2-c {
+        font-size: 1.5em;
     }
 
 }
