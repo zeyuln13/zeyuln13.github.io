@@ -397,6 +397,16 @@ section>.about-pages .profile {
     margin-top: 200px;
 }
 
+.pt-30{
+    padding-top: 30px;
+    letter-spacing: 2px;
+    color: rgb(203, 194, 194);
+}
+
+#cover p{
+    font-size: 1.25em;
+}
+
 @media (min-width: 737px) {
     /* notice */
     /* section>.about-pages .inner {
@@ -409,7 +419,7 @@ section>.about-pages .profile {
 
     .features>section {
         padding: 1em 0em 1em 1em;
-        width: 65em;
+        width: 69.8em;
     }
 
     .img-grid {
@@ -494,6 +504,9 @@ section>.about-pages .profile {
     }
 
 
+    #cover p{
+        text-align: center;
+    }
 }
 
 .bg-cover {
@@ -567,6 +580,7 @@ section>.about-pages .profile {
 
     h1 {
         font-size: 1.6em;
+        text-align: center;
     }
 
     .bg {
