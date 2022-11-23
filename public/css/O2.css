@@ -274,6 +274,10 @@ section nav>ul>li>a:after {
     color: white;
 }
 
+.about-pages>section:nth-last-child(1) {
+    height: auto;
+}
+
 
 .about-pages section>h2 {
     display: block;
@@ -290,7 +294,11 @@ section nav>ul>li>a:after {
 }
 
 #about {
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(200, 49, 49);
+}
+
+.ma{
+    margin: 0em 1em 0em 3.5em;
 }
 
 #cover {
@@ -334,7 +342,7 @@ section>.about-pages .profile {
 
 #contact {
     background-color: rgb(37, 37, 37);
-    height: 70vh;
+    /* height: 30vh; */
 }
 
 /* web page */
@@ -342,7 +350,7 @@ section>.about-pages .profile {
 .features>section {
     display: flex;
     flex-wrap: wrap;
-    /* padding: 2.5em 3em 1em 1.5em; */
+    padding: 1em 1em 2em 1em;
     max-width: 100%;
     /* width: 65em; */
 }
@@ -378,7 +386,7 @@ section>.about-pages .profile {
 .col-6b {
     --num: calc(12 / 6);
     width: calc(55% / var(--num) - 30px);
-    margin: 0px 25px 0px 30px;
+    margin: 0px 20px 0px 30px;
 }
 
 .max-w200 {
@@ -418,7 +426,7 @@ section>.about-pages .profile {
     }
 
     .features>section {
-        padding: 1em 0em 1em 1em;
+        /* padding: 1em 0em 1em 1em; */
         width: 69.8em;
     }
 
@@ -605,6 +613,10 @@ section>.about-pages .profile {
     section>.about-pages .inner-b {
         padding: 0em 0em 0em 0em;
     }
+
+    .ma{
+        margin: 0em 1em 0em -0.5em;
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -659,7 +671,7 @@ section>.about-pages .profile {
     }
 
     section>.about-pages .profile {
-        padding: 5em 3em 0em 3em;
+        padding: 5em 3em 2em 3em;
 
     }
 
@@ -675,10 +687,8 @@ section>.about-pages .profile {
 
     .features>section {
         /* padding: 1em 2em 1em 2em; */
-        width: 45em;
+        width: auto;
     }
-
-
 
     #contact {
         background-color: rgb(37, 37, 37);
@@ -689,13 +699,15 @@ section>.about-pages .profile {
         opacity: 0.3;
     }
 
+    /* .img-grid {
+        padding: 4.2em 3em 3em 3em;
+    } */
+
     .img-grid div {
         padding: 2em 0em 0em 0em;
     }
 
-    .img-grid {
-        padding: 4.2em 3em 3em 3em;
-    }
+
 
     .h2-c {
         font-size: 1.5em;
