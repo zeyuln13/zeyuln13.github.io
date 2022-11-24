@@ -30,6 +30,7 @@ body {
     overflow-x: hidden;
     width: 100%;
     font-family: sans-serif;
+    background-color: rgb(37, 37, 37);
 }
 
 h2,
@@ -772,7 +773,7 @@ section>.about-pages .inner {
 
     .about-pages,
     .about-title {
-        margin-left: 30em;
+        margin-left: 28em;
     }
 
     .ma {
@@ -781,3 +782,8 @@ section>.about-pages .inner {
 
     
 }
+
+/* .about-pages,
+.about-title {
+    margin-left: 21em;
+} */
