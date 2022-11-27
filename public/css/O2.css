@@ -33,8 +33,21 @@ body {
     background-color: rgb(37, 37, 37);
 }
 
-h2,
+.center{
+    text-align: center;
+}
+
 h3 {
+    margin: 0.25em 0 0.5em 0;
+}
+
+h4{
+    font-weight: normal;
+    margin: 0.5em 0 1em 0;
+}
+
+
+h2{
     margin: 0 0 0.5em 0;
 }
 
@@ -304,7 +317,7 @@ section nav>ul>li>a:after {
 }
 
 .ma {
-    margin: 0em 1em 0em 3.5em;
+    margin: 0.1em 1em 0em 1.5em;
 }
 
 #cover {
@@ -452,7 +465,7 @@ section>.about-pages .profile {
 
 .h2-c {
     text-align: center;
-    margin: 0 0 0 0;
+    margin: 0.5em 0 0 0;
 }
 
 .p-c {
@@ -717,6 +730,10 @@ section>.about-pages .profile {
 
     .h2-c {
         font-size: 1.5em;
+    }
+
+    .ma {
+        margin: 0.1em 1em 0em 0.5em;
     }
 
 }
