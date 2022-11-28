@@ -33,7 +33,7 @@ body {
     background-color: rgb(37, 37, 37);
 }
 
-.center{
+.center {
     text-align: center;
 }
 
@@ -41,19 +41,19 @@ h3 {
     margin: 0.25em 0 0.5em 0;
 }
 
-h4{
+h4 {
     font-weight: normal;
     margin: 0.5em 0 1em 0;
 }
 
 
-h2{
+h2 {
     margin: 0 0 0.5em 0;
 }
 
 
 h3 {
-font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 img {
@@ -802,3 +802,38 @@ section>.about-pages .inner {
 .about-title {
     margin-left: 21em;
 } */
+
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: white 0.2s ease;
+    -webkit-transition: white 0.2s ease;
+    -ms-transition: white 0.2s ease;
+    transition: white 0.2s ease;
+    background-color: transparent;
+    border: solid 1px !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    border-radius: 3em;
+    color: #ffffff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.6em;
+    font-weight: bold;
+    height: calc(4.75em + 2px);
+    letter-spacing: 0.25em;
+    line-height: 4.75em;
+    outline: 0;
+    padding: 0 3.75em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.button:hover {
+    background-color: rgb(248, 247, 247,0.2);
+    /* transition: white 0.2s ease; */
+}
