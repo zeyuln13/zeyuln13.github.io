@@ -65,6 +65,7 @@ img {
 
 .img-overlay {
     overflow: hidden;
+    background-color:rgb(245, 199, 2);
 }
 
 .img-fluid {
@@ -166,6 +167,7 @@ section {
 .features>section>.img-overlay>a>img:hover {
     transform: scale(1.3);
     transition: transform 0.8s 0s;
+    background-color:rgb(245, 199, 2);
 }
 
 /* .img-fluid>img:hover {
